@@ -9,80 +9,77 @@
 <link rel="stylesheet" href="assets/theme.css">
 <style>
   html, body { min-height: 100%; }
-  body {
-    background: var(--desk);
+  body { background: var(--white); }
+  .shell {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(380px, 1fr);
+    min-height: 100vh;
+  }
+  .hero {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    background: #1A1916;
+  }
+  .hero img {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+  .pane {
     display: grid;
     place-items: center;
-    padding: 32px 16px;
-  }
-  .gate {
-    width: 100%;
-    max-width: 420px;
+    padding: 40px 48px;
     background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    box-shadow: var(--shadow-md);
-    padding: 28px 28px 24px;
+    border-left: 1px solid var(--border);
   }
+  .gate { width: 100%; max-width: 400px; }
   .gate-brand { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
   .gate-brand img { width: 36px; height: 36px; border-radius: 6px; object-fit: cover; }
   .gate-brand b { display: block; font-size: 14px; }
   .gate-brand small { display: block; font-size: 11px; color: var(--muted); font-weight: 500; }
-  .gate h1 { font-size: 20px; font-weight: 650; margin-bottom: 4px; }
-  .gate .lead { font-size: 13px; color: var(--muted); margin-bottom: 18px; }
-  .staff-row { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
-  .staff-pick {
-    display: flex; align-items: center; gap: 12px;
-    padding: 10px 12px;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    cursor: pointer;
-    background: var(--white);
+  .gate h1 { font-size: 22px; font-weight: 650; margin-bottom: 4px; }
+  .gate .lead { font-size: 13px; color: var(--muted); margin-bottom: 22px; }
+  .gate .field { margin-bottom: 14px; }
+  .gate-go { width: 100%; justify-content: center; height: 40px; margin-top: 8px; }
+  @media (max-width: 860px) {
+    .shell { grid-template-columns: 1fr; }
+    .hero { min-height: 240px; }
+    .hero img { max-width: none; }
+    .pane { border-left: 0; border-top: 1px solid var(--border); padding: 28px 20px 40px; }
   }
-  .staff-pick:hover { border-color: var(--gold-300); background: var(--gold-50); }
-  .staff-pick:has(input:checked) { border-color: var(--gold-500); background: var(--gold-50); }
-  .staff-pick input { margin: 0; }
-  .staff-pick .who { font-weight: 650; font-size: 14px; display: block; }
-  .staff-pick .role { font-size: 12px; color: var(--muted); display: block; margin-top: 1px; }
-  .gate-go { width: 100%; justify-content: center; height: 40px; margin-top: 16px; }
-  .slip-help { margin-top: 14px; font-size: 12px; color: var(--muted); text-align: center; }
-  .slip-help a { color: var(--gold-600); font-weight: 600; }
 </style>
 </head>
 <body>
-<div class="gate">
-  <div class="gate-brand">
-    <img src="assets/logo.jpg" alt="">
-    <div><b>บ้านมือถือ</b><small>ระบบหลังบ้าน · MBH</small></div>
-  </div>
-  <h1>เข้าสู่ระบบ</h1>
-  <p class="lead">จันทร์ 18 สิงหาคม 2569 · เลือกพนักงานแล้วใส่รหัส</p>
+<div class="shell">
+  <aside class="hero">
+    <img src="assets/shop.jpg" alt="หน้าร้านบ้านมือถือ">
+  </aside>
+  <main class="pane">
+    <div class="gate">
+      <div class="gate-brand">
+        <img src="assets/logo.jpg" alt="">
+        <div><b>บ้านมือถือ</b><small>ระบบหลังบ้าน · MBH</small></div>
+      </div>
+      <h1>เข้าสู่ระบบ</h1>
+      <p class="lead">กรอกชื่อผู้ใช้และรหัสผ่านของพนักงาน</p>
 
-  <div class="staff-row">
-    <label class="staff-pick">
-      <input type="radio" name="staff" value="supaporn" checked>
-      <span class="avatar">สุ</span>
-      <span><span class="who">สุภาพร วงศ์คำ</span><span class="role">แอดมิน · กะเช้า</span></span>
-    </label>
-    <label class="staff-pick">
-      <input type="radio" name="staff" value="wichai">
-      <span class="avatar">วิ</span>
-      <span><span class="who">วิชัย บุญเรือง</span><span class="role">สินเชื่อ</span></span>
-    </label>
-    <label class="staff-pick">
-      <input type="radio" name="staff" value="napatsorn">
-      <span class="avatar">นภ</span>
-      <span><span class="who">นภัสสร ใจเย็น</span><span class="role">iCloud</span></span>
-    </label>
-  </div>
-
-  <div class="field">
-    <label>รหัสผ่าน</label>
-    <input type="password" placeholder="ใส่รหัสผ่าน" autocomplete="current-password">
-  </div>
-
-  <a class="btn btn-primary gate-go" href="dashboard.html">เข้าสู่ระบบ</a>
-  <div class="slip-help">ลืมรหัสติดต่อหัวหน้ากะ · <a href="tel:0960409305">096-040-9305</a></div>
+      <form action="dashboard.html" method="get">
+        <div class="field">
+          <label for="username">ชื่อผู้ใช้</label>
+          <input id="username" name="username" type="text" placeholder="ชื่อผู้ใช้" autocomplete="username" value="supaporn">
+        </div>
+        <div class="field">
+          <label for="password">รหัสผ่าน</label>
+          <input id="password" name="password" type="password" placeholder="รหัสผ่าน" autocomplete="current-password">
+        </div>
+        <button class="btn btn-primary gate-go" type="submit">เข้าสู่ระบบ</button>
+      </form>
+    </div>
+  </main>
 </div>
 </body>
 </html>
