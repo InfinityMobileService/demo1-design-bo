@@ -9,17 +9,31 @@
 <link rel="stylesheet" href="assets/theme.css">
 <style>
   html, body { min-height: 100%; }
-  body { background: var(--white); }
-  .shell {
+  body {
+    background: var(--desk);
     display: grid;
-    grid-template-columns: minmax(0, 1.1fr) minmax(380px, 1fr);
+    place-items: center;
     min-height: 100vh;
+    padding: clamp(16px, 4vh, 40px) clamp(16px, 3vw, 40px);
+  }
+  .shell {
+    width: min(1080px, 100%);
+    min-height: min(640px, calc(100vh - 48px));
+    height: min(720px, calc(100vh - 48px));
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(320px, 400px);
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
   }
   .hero {
     position: relative;
     padding: 0;
     overflow: hidden;
     background: #1A1916;
+    min-height: 0;
   }
   .hero img {
     width: 100%;
@@ -32,11 +46,11 @@
   .pane {
     display: grid;
     place-items: center;
-    padding: 40px 48px;
+    padding: 32px 36px;
     background: var(--white);
-    border-left: 1px solid var(--border);
+    min-width: 0;
   }
-  .gate { width: 100%; max-width: 400px; }
+  .gate { width: 100%; max-width: 320px; }
   .gate-brand { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
   .gate-brand img { width: 36px; height: 36px; border-radius: 6px; object-fit: cover; }
   .gate-brand b { display: block; font-size: 14px; }
@@ -46,10 +60,22 @@
   .gate .field { margin-bottom: 14px; }
   .gate-go { width: 100%; justify-content: center; height: 40px; margin-top: 8px; }
   @media (max-width: 860px) {
-    .shell { grid-template-columns: 1fr; }
-    .hero { min-height: 240px; }
-    .hero img { max-width: none; }
-    .pane { border-left: 0; border-top: 1px solid var(--border); padding: 28px 20px 40px; }
+    body { padding: 0; place-items: stretch; }
+    .shell {
+      width: 100%;
+      height: auto;
+      min-height: 100vh;
+      grid-template-columns: 1fr;
+      border-radius: 0;
+      border: 0;
+      box-shadow: none;
+    }
+    .hero { height: 32vh; min-height: 180px; max-height: 280px; }
+    .pane { padding: 28px 20px 40px; }
+  }
+  @media (max-width: 420px) {
+    .gate { max-width: none; }
+    .gate h1 { font-size: 20px; }
   }
 </style>
 </head>
