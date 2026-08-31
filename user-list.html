@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ข้อมูลพนักงาน — บ้านมือถือ MBH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css">
+</head>
+<body>
+<div class="app">
+<script>window.PAGE = { active: "user-list", title: "ข้อมูลพนักงาน", crumbs: ["พนักงาน", "ข้อมูลพนักงาน"] };</script>
+<script src="assets/layout.js"></script>
+<div class="main">
+<div class="content">
+
+  <div class="page-head">
+    <div>
+      <div class="page-title">ข้อมูลพนักงาน</div>
+      <div class="page-desc">บัญชีผู้ใช้ระบบหลังบ้าน และสิทธิ์การเข้าถึง</div>
+    </div>
+    <div class="page-actions">
+      <a href="user-form.html" class="btn btn-primary"><i data-lucide="plus"></i> สร้างพนักงาน</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="toolbar">
+        <div class="search">
+          <span class="ico"><i data-lucide="search"></i></span>
+          <input type="text" placeholder="ค้นหาชื่อ, อีเมล, เบอร์โทร">
+        </div>
+        <select class="select">
+          <option>สิทธิ์ทั้งหมด</option>
+          <option>ผู้ดูแลระบบ</option>
+          <option>สินเชื่อ</option>
+          <option>iCloud</option>
+        </select>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th class="num">ID</th>
+            <th>ชื่อ</th>
+            <th>อีเมล</th>
+            <th>เบอร์โทร</th>
+            <th>สิทธิ์</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="num">1</td>
+            <td>แอดมิน ระบบ</td>
+            <td>admin@mbh.co.th</td>
+            <td>081-040-9305</td>
+            <td><span class="badge badge-info">ผู้ดูแลระบบ</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="user-form.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="user-form.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm" style="color:var(--danger)">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="num">2</td>
+            <td>นริศรา พงษ์เพชร</td>
+            <td>narisara@mbh.co.th</td>
+            <td>081-445-2201</td>
+            <td><span class="badge badge-success">สินเชื่อ</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="user-form.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="user-form.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm" style="color:var(--danger)">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="num">3</td>
+            <td>กิตติพงษ์ แซ่ลี้</td>
+            <td>kittipong@mbh.co.th</td>
+            <td>082-778-3344</td>
+            <td><span class="badge badge-success">สินเชื่อ</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="user-form.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="user-form.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm" style="color:var(--danger)">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="num">4</td>
+            <td>พิมพ์ชนก ศรีทอง</td>
+            <td>pimchanok@mbh.co.th</td>
+            <td>089-112-6677</td>
+            <td><span class="badge badge-warning">iCloud</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="user-form.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="user-form.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm" style="color:var(--danger)">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="num">5</td>
+            <td>วีรยุทธ แก้วมณี</td>
+            <td>weerayut@mbh.co.th</td>
+            <td>086-330-9188</td>
+            <td><span class="badge badge-warning">iCloud</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="user-form.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="user-form.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm" style="color:var(--danger)">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="num">6</td>
+            <td>สุนิสา อินทร์แก้ว</td>
+            <td>sunisa@mbh.co.th</td>
+            <td>083-221-4455</td>
+            <td><span class="badge badge-success">สินเชื่อ</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="user-form.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="user-form.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm" style="color:var(--danger)">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="num">7</td>
+            <td>อภิชาติ บุญมี</td>
+            <td>apichat@mbh.co.th</td>
+            <td>088-556-0912</td>
+            <td><span class="badge badge-success">สินเชื่อ</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="user-form.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="user-form.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm" style="color:var(--danger)">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="num">8</td>
+            <td>รัตนาภรณ์ ชัยชนะ</td>
+            <td>rattanaporn@mbh.co.th</td>
+            <td>084-667-3300</td>
+            <td><span class="badge badge-info">ผู้ดูแลระบบ</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="user-form.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="user-form.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm" style="color:var(--danger)">ลบ</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pagination">
+      <div class="page-info">แสดง 1–8 จาก 8 รายการ</div>
+      <div class="pages">
+        <button class="page-btn">‹</button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn">›</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+</body>
+</html>

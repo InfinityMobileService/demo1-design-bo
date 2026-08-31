@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ข้อมูลสินเชื่อรายวัน — บ้านมือถือ MBH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css">
+</head>
+<body>
+<div class="app">
+<script>window.PAGE = { active: "daily-loan", title: "ข้อมูลสินเชื่อรายวัน", crumbs: ["สินเชื่อ", "ข้อมูลสินเชื่อรายวัน"] };</script>
+<script src="assets/layout.js"></script>
+
+<div class="main">
+<div class="content">
+
+  <div class="page-head">
+    <div>
+      <div class="page-title">ข้อมูลสินเชื่อรายวัน</div>
+      <div class="page-desc">สลิปชำระที่ต้องตรวจ / ติดตาม ระหว่าง 11–18 สิงหาคม 2569</div>
+    </div>
+    <div class="page-actions">
+      <a href="daily-loan-summary.html" class="btn btn-outline">ดูสรุปยอด ›</a>
+      <button class="btn btn-primary"><i data-lucide="search"></i> ค้นหา</button>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-ico"><i data-lucide="hourglass"></i></div>
+      <div class="stat-label">รอชำระ</div>
+      <div class="stat-value">18</div>
+      <div class="stat-trend" style="color:var(--muted)">วันนี้ครบกำหนด 9 ราย</div>
+    </div>
+    <div class="stat">
+      <div class="stat-ico"><i data-lucide="badge-check"></i></div>
+      <div class="stat-label">รอยืนยัน</div>
+      <div class="stat-value">8</div>
+      <div class="stat-trend trend-up">มีสลิปอัปโหลดแล้ว</div>
+    </div>
+    <div class="stat">
+      <div class="stat-ico"><i data-lucide="circle-check"></i></div>
+      <div class="stat-label">ชำระสำเร็จวันนี้</div>
+      <div class="stat-value">14</div>
+      <div class="stat-trend trend-up"><i data-lucide="trending-up"></i> จากเมื่อวาน 11 ราย</div>
+    </div>
+    <div class="stat">
+      <div class="stat-ico"><i data-lucide="wallet"></i></div>
+      <div class="stat-label">ยอดชำระวันนี้</div>
+      <div class="stat-value">฿86,500</div>
+      <div class="stat-trend trend-up"><i data-lucide="trending-up"></i> 8.2% จากเมื่อวาน</div>
+    </div>
+  </div>
+
+  <div class="card mb-20">
+    <div class="card-head">
+      <div class="toolbar">
+        <div class="search"><span class="ico"><i data-lucide="search"></i></span><input placeholder="ค้นหาชื่อลูกค้า / เบอร์ / Facebook"></div>
+        <input class="select" type="date" value="2026-08-11">
+        <input class="select" type="date" value="2026-08-18">
+        <select class="select">
+          <option>สถานะการชำระทั้งหมด</option>
+          <option selected>รอชำระ + รอยืนยัน</option>
+          <option>รอชำระ</option>
+          <option>ผ่อนชำระ</option>
+          <option>ชำระสำเร็จ</option>
+          <option>รอยืนยัน</option>
+          <option>บัญชีเฝ้าระวัง</option>
+        </select>
+        <select class="select">
+          <option>พนักงานทั้งหมด</option>
+          <option>สุภาพร วงศ์คำ</option>
+          <option>วิชัย บุญเรือง</option>
+          <option>นภัสสร ใจเย็น</option>
+          <option>กิตติพงศ์ สายชล</option>
+          <option>ไม่มีผู้รับผิดชอบ</option>
+        </select>
+      </div>
+    </div>
+    <div class="card-head">
+      <div class="card-title">18 สิงหาคม 2569 · วันนี้</div>
+      <span class="badge badge-info">6 รายการ</span>
+    </div>
+    <div class="table-wrap">
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th>ชื่อลูกค้า</th>
+            <th>เบอร์โทร</th>
+            <th>Facebook</th>
+            <th class="num">ชำระขั้นต่ำ</th>
+            <th class="num">ยอดชำระ</th>
+            <th>พนักงานรับผิดชอบ</th>
+            <th>สถานะ</th>
+            <th style="text-align:right">จัดการ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="loan-detail.html" style="font-weight:600">ณัฐพล บุญมา</a></td>
+            <td>084-339-0012</td>
+            <td>Nattapon B.</td>
+            <td class="num">฿650</td>
+            <td class="num">฿650</td>
+            <td>สุภาพร วงศ์คำ</td>
+            <td><span class="badge badge-info">รอยืนยัน</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="loan-detail.html" style="font-weight:600">สมชาย ใจดี</a></td>
+            <td>081-234-5678</td>
+            <td>Somchai Jaidee</td>
+            <td class="num">฿840</td>
+            <td class="num">฿0</td>
+            <td><span style="color:var(--muted);font-style:italic">ไม่มีผู้รับผิดชอบ</span></td>
+            <td><span class="badge badge-muted">รอชำระ</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="loan-detail.html" style="font-weight:600">วราภรณ์ ทองสุข</a></td>
+            <td>082-445-0912</td>
+            <td>Waraporn TS</td>
+            <td class="num">฿700</td>
+            <td class="num">฿350</td>
+            <td>วิชัย บุญเรือง</td>
+            <td><span class="badge badge-warning">ผ่อนชำระ</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="loan-detail.html" style="font-weight:600">ศิริพร คงเมือง</a></td>
+            <td>087-665-4321</td>
+            <td>Siriporn KM</td>
+            <td class="num">฿1,245</td>
+            <td class="num">฿1,245</td>
+            <td>นภัสสร ใจเย็น</td>
+            <td><span class="badge badge-success">ชำระสำเร็จ</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="loan-detail.html" style="font-weight:600">อนุชา แสงทอง</a></td>
+            <td>083-556-7788</td>
+            <td>Anucha St</td>
+            <td class="num">฿1,500</td>
+            <td class="num">฿0</td>
+            <td>กิตติพงศ์ สายชล</td>
+            <td><span class="badge badge-muted">รอชำระ</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="loan-detail.html" style="font-weight:600">กมลชนก พูลสวัสดิ์</a></td>
+            <td>089-112-3344</td>
+            <td>Kamolchanok P.</td>
+            <td class="num">฿900</td>
+            <td class="num">฿0</td>
+            <td><span style="color:var(--muted);font-style:italic">ไม่มีผู้รับผิดชอบ</span></td>
+            <td><span class="badge badge-danger">บัญชีเฝ้าระวัง</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm">ลบ</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card mb-20">
+    <div class="card-head">
+      <div class="card-title">17 สิงหาคม 2569</div>
+      <span class="badge badge-muted">4 รายการ</span>
+    </div>
+    <div class="table-wrap">
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th>ชื่อลูกค้า</th>
+            <th>เบอร์โทร</th>
+            <th>Facebook</th>
+            <th class="num">ชำระขั้นต่ำ</th>
+            <th class="num">ยอดชำระ</th>
+            <th>พนักงานรับผิดชอบ</th>
+            <th>สถานะ</th>
+            <th style="text-align:right">จัดการ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="loan-detail.html" style="font-weight:600">ธีรภัทร มั่นคง</a></td>
+            <td>086-778-9900</td>
+            <td>Teerapat M.</td>
+            <td class="num">฿650</td>
+            <td class="num">฿650</td>
+            <td>สุภาพร วงศ์คำ</td>
+            <td><span class="badge badge-success">ชำระสำเร็จ</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="loan-detail.html" style="font-weight:600">อรุณี แสงจันทร์</a></td>
+            <td>085-221-9088</td>
+            <td>Arunee SJ</td>
+            <td class="num">฿980</td>
+            <td class="num">฿980</td>
+            <td>วิชัย บุญเรือง</td>
+            <td><span class="badge badge-info">รอยืนยัน</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="loan-detail.html" style="font-weight:600">จักรกฤษณ์ วงศ์ใหญ่</a></td>
+            <td>081-909-2277</td>
+            <td>Jakrit W.</td>
+            <td class="num">฿1,200</td>
+            <td class="num">฿1,200</td>
+            <td>นภัสสร ใจเย็น</td>
+            <td><span class="badge badge-success">ชำระสำเร็จ</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="loan-detail.html" style="font-weight:600">ปิยะดา ศรีสุวรรณ</a></td>
+            <td>088-221-4567</td>
+            <td>Piyada Srisuwan</td>
+            <td class="num">฿3,780</td>
+            <td class="num">฿0</td>
+            <td>กิตติพงศ์ สายชล</td>
+            <td><span class="badge badge-muted">รอชำระ</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm">ลบ</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title">16 สิงหาคม 2569</div>
+      <span class="badge badge-muted">3 รายการ</span>
+    </div>
+    <div class="table-wrap">
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th>ชื่อลูกค้า</th>
+            <th>เบอร์โทร</th>
+            <th>Facebook</th>
+            <th class="num">ชำระขั้นต่ำ</th>
+            <th class="num">ยอดชำระ</th>
+            <th>พนักงานรับผิดชอบ</th>
+            <th>สถานะ</th>
+            <th style="text-align:right">จัดการ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="loan-detail.html" style="font-weight:600">นฤมล ชัยชนะ</a></td>
+            <td>080-998-4412</td>
+            <td>Naruemon C.</td>
+            <td class="num">฿720</td>
+            <td class="num">฿720</td>
+            <td>สุภาพร วงศ์คำ</td>
+            <td><span class="badge badge-success">ชำระสำเร็จ</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="loan-detail.html" style="font-weight:600">พงศกร อินทร์แก้ว</a></td>
+            <td>089-330-6671</td>
+            <td>Pongsakorn IK</td>
+            <td class="num">฿1,050</td>
+            <td class="num">฿500</td>
+            <td>วิชัย บุญเรือง</td>
+            <td><span class="badge badge-warning">ผ่อนชำระ</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="loan-detail.html" style="font-weight:600">สุนิสา เจริญสุข</a></td>
+            <td>086-114-2290</td>
+            <td>Sunisa J.</td>
+            <td class="num">฿880</td>
+            <td class="num">฿880</td>
+            <td>แอดมิน ระบบ</td>
+            <td><span class="badge badge-success">ชำระสำเร็จ</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm">ลบ</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pagination">
+      <div class="page-info">แสดง 13 รายการ จาก 3 วัน · กรองสถานะ รอชำระ + รอยืนยัน</div>
+      <div class="pages">
+        <button class="page-btn">‹</button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">›</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+</body>
+</html>

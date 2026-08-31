@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design Preview — บ้านมือถือ MBH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css">
+<style>
+  body { padding: 40px 24px; max-width: 960px; margin: 0 auto; }
+  .hub-head { text-align: center; margin-bottom: 36px; }
+  .hub-logo { width: 84px; height: 84px; margin: 0 auto 14px; border-radius: 16px; background: #FAE6BE; overflow: hidden; display: grid; place-items: center; font-size: 42px; box-shadow: var(--shadow-md); }
+  .group { margin-bottom: 26px; }
+  .group h2 { font-size: 15px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .links { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+  .link-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 16px; box-shadow: var(--shadow-sm); font-weight: 600; font-size: 13.5px; display: flex; align-items: center; gap: 10px; transition: transform .12s, box-shadow .12s; }
+  .link-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); border-color: var(--gold-300); }
+</style>
+</head>
+<body>
+  <div class="hub-head">
+    <div class="hub-logo"><img src="assets/logo.jpg" alt="บ้านมือถือ"></div>
+    <h1 style="font-size:24px">บ้านมือถือ — Backoffice Redesign</h1>
+    <p style="color:var(--muted);margin-top:6px">UI Mockup สำหรับ confirm design · MOBILE HOME (MBH) · ยังไม่เชื่อม API</p>
+  </div>
+
+  <div class="group">
+    <h2><i data-lucide="key"></i> เริ่มต้น</h2>
+    <div class="links">
+      <a class="link-card" href="login.html"><i data-lucide="store"></i> เปิดร้าน</a>
+      <a class="link-card" href="dashboard.html"><i data-lucide="calendar-check"></i> งานวันนี้</a>
+      <a class="link-card" href="chat.html"><i data-lucide="message-circle"></i> ช่องทางสนทนา</a>
+    </div>
+  </div>
+
+  <div class="group">
+    <h2><i data-lucide="user"></i> ลูกค้า</h2>
+    <div class="links">
+      <a class="link-card" href="customer-list.html">ข้อมูลลูกค้า</a>
+      <a class="link-card" href="customer-form.html">สร้างลูกค้า</a>
+      <a class="link-card" href="customer-detail.html">โปรไฟล์ลูกค้า</a>
+    </div>
+  </div>
+
+  <div class="group">
+    <h2><i data-lucide="book-open"></i> สินเชื่อ</h2>
+    <div class="links">
+      <a class="link-card" href="loan-list.html">ข้อมูลสินเชื่อ</a>
+      <a class="link-card" href="loan-detail.html">รายละเอียดสัญญา</a>
+      <a class="link-card" href="daily-loan.html">ข้อมูลสินเชื่อรายวัน</a>
+      <a class="link-card" href="daily-loan-summary.html">สรุปยอดรายวัน</a>
+    </div>
+  </div>
+
+  <div class="group">
+    <h2><i data-lucide="lock"></i> ติดตามหนี้</h2>
+    <div class="links">
+      <a class="link-card" href="lock-device-list.html">ข้อมูลล็อกเครื่อง</a>
+      <a class="link-card" href="bad-customer-list.html">ข้อมูล iCloud เสีย</a>
+    </div>
+  </div>
+
+  <div class="group">
+    <h2><i data-lucide="users"></i> พนักงาน</h2>
+    <div class="links">
+      <a class="link-card" href="user-list.html">ข้อมูลพนักงาน</a>
+      <a class="link-card" href="user-form.html">สร้างพนักงาน</a>
+    </div>
+  </div>
+
+  <div class="group">
+    <h2><i data-lucide="settings"></i> ตั้งค่าระบบ</h2>
+    <div class="links">
+      <a class="link-card" href="settings-model-list.html">รุ่นโทรศัพท์</a>
+      <a class="link-card" href="settings-model-form.html">รุ่นโทรศัพท์ (ฟอร์ม)</a>
+      <a class="link-card" href="settings-loan-list.html">เงินกู้</a>
+      <a class="link-card" href="settings-loan-form.html">เงินกู้ (ฟอร์ม)</a>
+      <a class="link-card" href="settings-user-level-list.html">ระดับเงินกู้</a>
+      <a class="link-card" href="settings-user-level-form.html">ระดับเงินกู้ (ฟอร์ม)</a>
+      <a class="link-card" href="settings-icloud-list.html">iCloud</a>
+      <a class="link-card" href="settings-icloud-form.html">iCloud (ฟอร์ม)</a>
+      <a class="link-card" href="settings-bank-list.html">บัญชีธนาคาร</a>
+    </div>
+  </div>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>lucide.createIcons();</script>
+</body>
+</html>

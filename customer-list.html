@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ข้อมูลลูกค้า — บ้านมือถือ MBH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css">
+</head>
+<body>
+<div class="app">
+<script>window.PAGE = { active: "customer-list", title: "ข้อมูลลูกค้า", crumbs: ["ลูกค้า", "ข้อมูลลูกค้า"] };</script>
+<script src="assets/layout.js"></script>
+<div class="main">
+<div class="content">
+
+  <div class="page-head">
+    <div>
+      <div class="page-title">ข้อมูลลูกค้า</div>
+      <div class="page-desc">รายชื่อลูกค้าในระบบสินเชื่อ บ้านมือถือ MBH</div>
+    </div>
+    <div class="page-actions">
+      <a href="customer-form.html" class="btn btn-primary"><i data-lucide="plus"></i> สร้างลูกค้า</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="toolbar">
+        <div class="search">
+          <span class="ico"><i data-lucide="search"></i></span>
+          <input type="text" placeholder="ค้นหาชื่อ, เบอร์โทร, Facebook">
+        </div>
+        <select class="select">
+          <option>สถานะทั้งหมด</option>
+          <option>ลูกค้าทั่วไป</option>
+          <option>ผ่อนชำระ</option>
+          <option>แบล็คลิสต์</option>
+        </select>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th class="num">ID</th>
+            <th>ชื่อ</th>
+            <th>เบอร์โทร</th>
+            <th>Facebook</th>
+            <th>สถานะ</th>
+            <th class="num">ครั้งที่กู้</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="num">1024</td>
+            <td>สมชาย ใจดี</td>
+            <td>081-234-5678</td>
+            <td>สมชาย ใจดี</td>
+            <td><span class="badge badge-warning">ผ่อนชำระ</span></td>
+            <td class="num">3</td>
+            <td>
+              <div class="row-actions">
+                <a href="customer-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="customer-form.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm" style="color:var(--danger)">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="num">1023</td>
+            <td>วราภรณ์ ทองสุข</td>
+            <td>082-445-0912</td>
+            <td>วราภรณ์ ทองสุข</td>
+            <td><span class="badge badge-danger">แบล็คลิสต์</span></td>
+            <td class="num">5</td>
+            <td>
+              <div class="row-actions">
+                <a href="customer-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="customer-form.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm" style="color:var(--danger)">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="num">1022</td>
+            <td>อนุชา แสงทอง</td>
+            <td>083-556-7788</td>
+            <td>อนุชา แสงทอง</td>
+            <td><span class="badge badge-success">ลูกค้าทั่วไป</span></td>
+            <td class="num">1</td>
+            <td>
+              <div class="row-actions">
+                <a href="customer-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="customer-form.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm" style="color:var(--danger)">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="num">1021</td>
+            <td>กมลชนก พูลสวัสดิ์</td>
+            <td>089-112-3344</td>
+            <td>กมลชนก พูลสวัสดิ์</td>
+            <td><span class="badge badge-warning">ผ่อนชำระ</span></td>
+            <td class="num">2</td>
+            <td>
+              <div class="row-actions">
+                <a href="customer-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="customer-form.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm" style="color:var(--danger)">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="num">1020</td>
+            <td>ธีรภัทร มั่นคง</td>
+            <td>086-778-9900</td>
+            <td>ธีร์ มั่นคง</td>
+            <td><span class="badge badge-success">ลูกค้าทั่วไป</span></td>
+            <td class="num">1</td>
+            <td>
+              <div class="row-actions">
+                <a href="customer-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="customer-form.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm" style="color:var(--danger)">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="num">1019</td>
+            <td>ปิยะดา ศรีสุวรรณ</td>
+            <td>088-221-4567</td>
+            <td>ปิยะดา ศรีสุวรรณ</td>
+            <td><span class="badge badge-warning">ผ่อนชำระ</span></td>
+            <td class="num">4</td>
+            <td>
+              <div class="row-actions">
+                <a href="customer-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="customer-form.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm" style="color:var(--danger)">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="num">1018</td>
+            <td>ณัฐพล บุญมา</td>
+            <td>084-339-0012</td>
+            <td>ณัฐพล บุญมา</td>
+            <td><span class="badge badge-warning">ผ่อนชำระ</span></td>
+            <td class="num">2</td>
+            <td>
+              <div class="row-actions">
+                <a href="customer-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="customer-form.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm" style="color:var(--danger)">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="num">1017</td>
+            <td>ศิริพร คงเมือง</td>
+            <td>087-665-4321</td>
+            <td>ศิริพร คงเมือง</td>
+            <td><span class="badge badge-success">ลูกค้าทั่วไป</span></td>
+            <td class="num">1</td>
+            <td>
+              <div class="row-actions">
+                <a href="customer-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="customer-form.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm" style="color:var(--danger)">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="num">1016</td>
+            <td>จักรกฤษณ์ วงศ์ใหญ่</td>
+            <td>081-909-2277</td>
+            <td>จักรกฤษณ์ วงศ์ใหญ่</td>
+            <td><span class="badge badge-success">ลูกค้าทั่วไป</span></td>
+            <td class="num">6</td>
+            <td>
+              <div class="row-actions">
+                <a href="customer-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="customer-form.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm" style="color:var(--danger)">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="num">1015</td>
+            <td>นภาลัย จันทร์เพ็ญ</td>
+            <td>083-120-8844</td>
+            <td>นภาลัย จันทร์เพ็ญ</td>
+            <td><span class="badge badge-warning">ผ่อนชำระ</span></td>
+            <td class="num">2</td>
+            <td>
+              <div class="row-actions">
+                <a href="customer-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="customer-form.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm" style="color:var(--danger)">ลบ</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pagination">
+      <div class="page-info">แสดง 1–10 จาก 86 รายการ</div>
+      <div class="pages">
+        <button class="page-btn">‹</button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">…</button>
+        <button class="page-btn">9</button>
+        <button class="page-btn">›</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>สร้างลูกค้า — บ้านมือถือ MBH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css">
+</head>
+<body>
+<div class="app">
+<script>window.PAGE = { active: "customer-form", title: "สร้างลูกค้า", crumbs: ["ลูกค้า", "สร้างลูกค้า"] };</script>
+<script src="assets/layout.js"></script>
+<div class="main">
+<div class="content">
+
+  <div class="page-head">
+    <div>
+      <div class="page-title">สร้างลูกค้า</div>
+      <div class="page-desc">กรอกข้อมูลลูกค้า พร้อมสัญญาเงินกู้แรก</div>
+    </div>
+    <div class="page-actions">
+      <a href="customer-list.html" class="btn btn-outline"><i data-lucide="arrow-left"></i> กลับ</a>
+    </div>
+  </div>
+
+  <div class="card card-pad">
+
+    <div class="form-section-title"><i data-lucide="user"></i> ข้อมูลลูกค้า</div>
+    <div class="form-grid">
+      <div class="field">
+        <label>ชื่อ-นามสกุล <span class="req">*</span></label>
+        <input type="text" placeholder="กรอกชื่อ-นามสกุล">
+      </div>
+      <div class="field">
+        <label>เบอร์โทรศัพท์ <span class="req">*</span></label>
+        <input type="tel" placeholder="08x-xxx-xxxx">
+        <div class="hint">เช่น 081-234-5678</div>
+      </div>
+      <div class="field">
+        <label>ชื่อ Facebook <span class="req">*</span></label>
+        <input type="text" placeholder="กรอกชื่อ Facebook">
+      </div>
+      <div class="field">
+        <label>ลิงก์ Facebook <span class="req">*</span></label>
+        <input type="text" placeholder="https://facebook.com/...">
+      </div>
+      <div class="field">
+        <label>อายุ <span class="req">*</span></label>
+        <input type="number" placeholder="กรอกอายุ">
+      </div>
+      <div class="field">
+        <label>จำนวนครั้งที่กู้ <span class="req">*</span></label>
+        <input type="number" value="0" placeholder="0">
+        <div class="hint">ลูกค้าเก่าใส่จำนวนครั้งที่เคยกู้</div>
+      </div>
+      <div class="field">
+        <label>สถานะลูกค้า <span class="req">*</span></label>
+        <select>
+          <option selected>ลูกค้าทั่วไป</option>
+          <option>ผ่อนชำระ</option>
+          <option>แบล็คลิสต์</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-section-title mt-20"><i data-lucide="paperclip"></i> เอกสารลูกค้า</div>
+    <div class="grid-3">
+      <div class="field">
+        <label>QR Code ไลน์ตนเอง</label>
+          <div class="upload-box">
+          <span class="big"><i data-lucide="upload"></i></span>
+          ลากไฟล์มาวาง หรือคลิกเพื่อเลือก
+          <div class="hint">JPG, PNG หรือ PDF ไม่เกิน 3MB</div>
+        </div>
+      </div>
+      <div class="field">
+        <label>รูปภาพบัตรประชาชน / ถ่ายคู่บัตร</label>
+          <div class="upload-box">
+          <span class="big"><i data-lucide="upload"></i></span>
+          ลากไฟล์มาวาง หรือคลิกเพื่อเลือก
+          <div class="hint">JPG, PNG หรือ PDF ไม่เกิน 3MB</div>
+        </div>
+      </div>
+      <div class="field">
+        <label>รูปสมุดบัญชี / เลขบัญชี</label>
+          <div class="upload-box">
+          <span class="big"><i data-lucide="upload"></i></span>
+          ลากไฟล์มาวาง หรือคลิกเพื่อเลือก
+          <div class="hint">ไม่รับพร้อมเพย์ / วอลเล็ท</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-section-title mt-20"><i data-lucide="book-open"></i> ข้อมูลเงินกู้</div>
+    <div class="form-grid">
+      <div class="field">
+        <label>ข้อมูลเงินกู้ <span class="req">*</span></label>
+        <select>
+          <option>กรุณาเลือกข้อมูลเงินกู้</option>
+          <option selected>กู้รายเดือน 30 วัน</option>
+          <option>ผ่อนชำระ 3 งวด</option>
+          <option>กู้เต็มจำนวน</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>รุ่นโทรศัพท์ <span class="req">*</span></label>
+        <select>
+          <option>กรุณาเลือกรุ่นโทรศัพท์</option>
+          <option>iPhone 13</option>
+          <option>iPhone 14</option>
+          <option selected>iPhone 15</option>
+          <option>iPhone 15 Pro</option>
+          <option>Samsung S24</option>
+          <option>Samsung A55</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>ยอดเงินกู้ <span class="req">*</span></label>
+        <input type="text" value="฿15,000" placeholder="กรอกยอดเงินกู้">
+        <div class="hint">ดึงจากรุ่นโทรศัพท์ตามประเภทเงินกู้</div>
+      </div>
+      <div class="field">
+        <label>จำนวนวันชำระ <span class="req">*</span></label>
+        <input type="text" value="30" readonly>
+        <div class="hint">ดึงจากประเภทเงินกู้ อ่านอย่างเดียว</div>
+      </div>
+      <div class="field">
+        <label>จำนวนงวดชำระรวม <span class="req">*</span></label>
+        <input type="text" value="1" readonly>
+      </div>
+      <div class="field">
+        <label>จำนวนค่าปรับต่อวัน <span class="req">*</span></label>
+        <input type="text" value="฿50" readonly>
+      </div>
+      <div class="field">
+        <label>อัตราดอกเบี้ย (%) <span class="req">*</span></label>
+        <input type="text" value="10">
+      </div>
+      <div class="field">
+        <label>จำนวนดอกเบี้ย (บาท)</label>
+        <input type="text" value="฿1,500" placeholder="กดคำนวณจากยอดกู้ × อัตรา">
+        <div class="hint">ยอดกู้ × อัตราดอกเบี้ย</div>
+      </div>
+      <div class="field">
+        <label>จำนวนเงินรวม <span class="req">*</span></label>
+        <input type="text" value="฿16,500" placeholder="ยอดกู้ + ดอกเบี้ย">
+      </div>
+      <div class="field">
+        <label>วันที่ชำระ</label>
+        <input type="date" value="2026-09-17">
+        <div class="hint">วันนี้ + จำนวนวันชำระ (แสดง 17 ก.ย. 2569)</div>
+      </div>
+    </div>
+
+    <div class="form-section-title mt-20"><i data-lucide="landmark"></i> บัญชีธนาคาร</div>
+    <div class="form-grid">
+      <div class="field">
+        <label>ข้อมูลธนาคาร <span class="req">*</span></label>
+        <select>
+          <option>กรุณาเลือกธนาคาร</option>
+          <option selected>ธนาคารกสิกรไทย</option>
+          <option>ธนาคารกรุงเทพ</option>
+          <option>ธนาคารกรุงไทย</option>
+          <option>ธนาคารกรุงศรีอยุธยา</option>
+          <option>ธนาคารไทยพาณิชย์</option>
+          <option>ธนาคารทหารไทยธนชาต</option>
+          <option>ธนาคารออมสิน</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>เลขบัญชี <span class="req">*</span></label>
+        <input type="text" placeholder="กรอกเลขบัญชี">
+      </div>
+      <div class="field full">
+        <label>ชื่อเจ้าของบัญชี <span class="req">*</span></label>
+        <input type="text" placeholder="ชื่อผู้ถอน / เจ้าของบัญชี">
+      </div>
+    </div>
+
+    <div class="form-section-title mt-20"><i data-lucide="smartphone"></i> เครื่องและ iCloud</div>
+    <div class="form-grid">
+      <div class="field">
+        <label>เลข IMEI <span class="req">*</span></label>
+        <input type="text" placeholder="กรอกเลข IMEI 15 หลัก">
+      </div>
+      <div class="field">
+        <label>เลข iCloud <span class="req">*</span></label>
+        <input type="text" placeholder="กรอกเลข / อีเมล iCloud">
+      </div>
+      <div class="field">
+        <label>iCloud (บัญชีระบบ)</label>
+        <select>
+          <option>เลือก icloud...</option>
+          <option selected>icloud01@mbh.co.th (12)</option>
+          <option>icloud02@mbh.co.th (8)</option>
+          <option>icloud03@mbh.co.th (3)</option>
+        </select>
+        <div class="hint">ตัวเลขในวงเล็บคือจำนวนสัญญาที่ผูกอยู่</div>
+      </div>
+      <div class="field">
+        <label>รหัส iCloud</label>
+        <input type="text" value="MBH-8F2K" readonly>
+        <div class="hint">กดสร้างรหัสจากระบบเมื่อเลือกบัญชี iCloud</div>
+      </div>
+    </div>
+
+    <div class="form-section-title mt-20"><i data-lucide="image"></i> ภาพหน้าจอเครื่อง</div>
+    <div class="grid-2">
+      <div class="field">
+        <label>หน้าจอที่ 1</label>
+          <div class="upload-box">
+          <span class="big"><i data-lucide="upload"></i></span>
+          ลากไฟล์มาวาง หรือคลิกเพื่อเลือก
+          <div class="hint">JPG, PNG หรือ PDF ไม่เกิน 3MB</div>
+        </div>
+      </div>
+      <div class="field">
+        <label>หน้าจอที่ 2</label>
+          <div class="upload-box">
+          <span class="big"><i data-lucide="upload"></i></span>
+          ลากไฟล์มาวาง หรือคลิกเพื่อเลือก
+          <div class="hint">JPG, PNG หรือ PDF ไม่เกิน 3MB</div>
+        </div>
+      </div>
+      <div class="field">
+        <label>หน้าจอที่ 3</label>
+          <div class="upload-box">
+          <span class="big"><i data-lucide="upload"></i></span>
+          ลากไฟล์มาวาง หรือคลิกเพื่อเลือก
+          <div class="hint">JPG, PNG หรือ PDF ไม่เกิน 3MB</div>
+        </div>
+      </div>
+      <div class="field">
+        <label>หน้าจอที่ 4</label>
+          <div class="upload-box">
+          <span class="big"><i data-lucide="upload"></i></span>
+          ลากไฟล์มาวาง หรือคลิกเพื่อเลือก
+          <div class="hint">JPG, PNG หรือ PDF ไม่เกิน 3MB</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-section-title mt-20"><i data-lucide="file-text"></i> บันทึกเพิ่มเติม</div>
+    <div class="form-grid">
+      <div class="field full">
+        <label>บันทึกข้อมูล</label>
+        <textarea rows="4" placeholder="กรอกบันทึกข้อมูล"></textarea>
+      </div>
+      <div class="field full">
+        <label>บันทึกปัญหา</label>
+        <textarea rows="4" placeholder="กรอกปัญหา"></textarea>
+      </div>
+    </div>
+
+    <div class="mt-20">
+      <div class="form-section-title"><i data-lucide="search"></i> ข้อมูลลูกค้า IMEI และ iCloud ซ้ำ</div>
+      <p class="page-desc mb-20">ตรวจสอบก่อนบันทึกว่าเลขเครื่องหรือ iCloud ถูกใช้กับลูกค้าอื่นหรือไม่</p>
+      <div class="table-wrap">
+        <table class="tbl" style="min-width:0">
+          <thead>
+            <tr>
+              <th>ชื่อลูกค้า</th>
+              <th>เลข IMEI</th>
+              <th>เลข iCloud</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="3">
+                <div class="empty" style="padding:28px 12px">
+                  <span class="big"><i data-lucide="circle-check"></i></span>
+                  ยังไม่มีข้อมูลลูกค้าซ้ำ — กดตรวจสอบหลังกรอก IMEI / iCloud
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="form-footer">
+      <a href="customer-list.html" class="btn btn-outline">ยกเลิก</a>
+      <button type="button" class="btn btn-primary">บันทึก</button>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+</body>
+</html>

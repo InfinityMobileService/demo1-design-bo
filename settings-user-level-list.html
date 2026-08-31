@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ระดับเงินกู้ — บ้านมือถือ MBH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css">
+</head>
+<body>
+<div class="app">
+<script>window.PAGE = { active: "settings-user-level", title: "ระดับเงินกู้", crumbs: ["ตั้งค่าระบบ", "ระดับเงินกู้"] };</script>
+<script src="assets/layout.js"></script>
+<div class="main">
+<div class="content">
+
+  <div class="page-head">
+    <div><div class="page-title">ระดับเงินกู้</div><div class="page-desc">จัดการระดับลูกค้า จำนวนครั้งที่กู้ และอัตราดอกเบี้ยตามระดับ</div></div>
+    <div class="page-actions"><a href="settings-user-level-form.html" class="btn btn-primary"><i data-lucide="plus"></i> เพิ่มระดับเงินกู้</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title">รายการระดับเงินกู้ <span class="badge badge-info">4 ระดับ</span></div>
+      <div class="toolbar"><label class="search" aria-label="ค้นหาระดับเงินกู้"><span class="ico"><i data-lucide="search"></i></span><input type="search" placeholder="ค้นหาชื่อระดับ..."></label><select class="select" aria-label="กรองสถานะ"><option>ทุกสถานะ</option><option>ใช้งาน</option><option>ปิดใช้งาน</option></select></div>
+    </div>
+    <div class="table-wrap">
+      <table class="tbl">
+        <thead><tr><th class="num">ID</th><th>ชื่อระดับ</th><th>สีประจำระดับ</th><th class="num">อัตราดอกเบี้ย (%)</th><th class="num">จำนวนครั้งที่กู้</th><th>สถานะ</th><th></th></tr></thead>
+        <tbody>
+          <tr><td class="num">1</td><td><strong>VIP</strong></td><td><span class="badge badge-info">ม่วง</span></td><td class="num">5.00</td><td class="num">3</td><td><span class="badge badge-success">ใช้งาน</span></td><td><div class="row-actions"><a href="settings-user-level-form.html" class="btn btn-ghost btn-sm">ดู</a><a href="settings-user-level-form.html" class="btn btn-ghost btn-sm">แก้ไข</a><button type="button" class="btn btn-ghost btn-sm">ลบ</button></div></td></tr>
+          <tr><td class="num">2</td><td><strong>Silver</strong></td><td><span class="badge badge-muted">เงิน</span></td><td class="num">10.00</td><td class="num">6</td><td><span class="badge badge-success">ใช้งาน</span></td><td><div class="row-actions"><a href="settings-user-level-form.html" class="btn btn-ghost btn-sm">ดู</a><a href="settings-user-level-form.html" class="btn btn-ghost btn-sm">แก้ไข</a><button type="button" class="btn btn-ghost btn-sm">ลบ</button></div></td></tr>
+          <tr><td class="num">3</td><td><strong>Gold</strong></td><td><span class="badge badge-warning">ทอง</span></td><td class="num">15.00</td><td class="num">10</td><td><span class="badge badge-success">ใช้งาน</span></td><td><div class="row-actions"><a href="settings-user-level-form.html" class="btn btn-ghost btn-sm">ดู</a><a href="settings-user-level-form.html" class="btn btn-ghost btn-sm">แก้ไข</a><button type="button" class="btn btn-ghost btn-sm">ลบ</button></div></td></tr>
+          <tr><td class="num">4</td><td><strong>Platinum</strong></td><td><span class="badge badge-muted">แพลทินัม</span></td><td class="num">20.00</td><td class="num">16</td><td><span class="badge badge-muted">ปิดใช้งาน</span></td><td><div class="row-actions"><a href="settings-user-level-form.html" class="btn btn-ghost btn-sm">ดู</a><a href="settings-user-level-form.html" class="btn btn-ghost btn-sm">แก้ไข</a><button type="button" class="btn btn-ghost btn-sm">ลบ</button></div></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pagination"><div class="page-info">แสดง 1–4 จาก 4 รายการ</div><div class="pages"><button class="page-btn" type="button">‹</button><button class="page-btn active" type="button">1</button><button class="page-btn" type="button">›</button></div></div>
+  </div>
+
+</div>
+</div>
+</div>
+</body>
+</html>

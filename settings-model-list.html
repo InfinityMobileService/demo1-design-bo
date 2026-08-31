@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>รุ่นโทรศัพท์ — บ้านมือถือ MBH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css">
+</head>
+<body>
+<div class="app">
+<script>window.PAGE = { active: "settings-model", title: "รุ่นโทรศัพท์", crumbs: ["ตั้งค่าระบบ", "รุ่นโทรศัพท์"] };</script>
+<script src="assets/layout.js"></script>
+<div class="main">
+<div class="content">
+
+  <div class="page-head">
+    <div>
+      <div class="page-title">รุ่นโทรศัพท์</div>
+      <div class="page-desc">จัดการรุ่นโทรศัพท์และรายการราคาที่ใช้ในระบบสินเชื่อ</div>
+    </div>
+    <div class="page-actions">
+      <a href="settings-model-form.html" class="btn btn-primary"><i data-lucide="plus"></i> เพิ่มรุ่นโทรศัพท์</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title">รายการรุ่นโทรศัพท์ <span class="badge badge-info">12 รายการ</span></div>
+      <div class="toolbar">
+        <label class="search" aria-label="ค้นหารุ่นโทรศัพท์">
+          <span class="ico"><i data-lucide="search"></i></span>
+          <input type="search" placeholder="ค้นหาชื่อรุ่น...">
+        </label>
+        <select class="select" aria-label="กรองสถานะ">
+          <option>ทุกสถานะ</option>
+          <option>ใช้งาน</option>
+          <option>รอตรวจสอบ</option>
+          <option>ปิดใช้งาน</option>
+        </select>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th class="num">ID</th>
+            <th>ชื่อรุ่น</th>
+            <th>สถานะ</th>
+            <th>แก้ไขล่าสุด</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="num">1</td>
+            <td><strong>iPhone 15 Pro Max</strong></td>
+            <td><span class="badge badge-success">ใช้งาน</span></td>
+            <td>18 สิงหาคม 2569</td>
+            <td><div class="row-actions"><a href="settings-model-form.html" class="btn btn-ghost btn-sm">ดู</a><a href="settings-model-form.html" class="btn btn-ghost btn-sm">แก้ไข</a><button type="button" class="btn btn-ghost btn-sm">ลบ</button></div></td>
+          </tr>
+          <tr>
+            <td class="num">2</td>
+            <td><strong>iPhone 14</strong></td>
+            <td><span class="badge badge-success">ใช้งาน</span></td>
+            <td>16 สิงหาคม 2569</td>
+            <td><div class="row-actions"><a href="settings-model-form.html" class="btn btn-ghost btn-sm">ดู</a><a href="settings-model-form.html" class="btn btn-ghost btn-sm">แก้ไข</a><button type="button" class="btn btn-ghost btn-sm">ลบ</button></div></td>
+          </tr>
+          <tr>
+            <td class="num">3</td>
+            <td><strong>Samsung Galaxy S24 Ultra</strong></td>
+            <td><span class="badge badge-success">ใช้งาน</span></td>
+            <td>15 สิงหาคม 2569</td>
+            <td><div class="row-actions"><a href="settings-model-form.html" class="btn btn-ghost btn-sm">ดู</a><a href="settings-model-form.html" class="btn btn-ghost btn-sm">แก้ไข</a><button type="button" class="btn btn-ghost btn-sm">ลบ</button></div></td>
+          </tr>
+          <tr>
+            <td class="num">4</td>
+            <td><strong>OPPO Reno11 Pro</strong></td>
+            <td><span class="badge badge-warning">รอตรวจสอบ</span></td>
+            <td>12 สิงหาคม 2569</td>
+            <td><div class="row-actions"><a href="settings-model-form.html" class="btn btn-ghost btn-sm">ดู</a><a href="settings-model-form.html" class="btn btn-ghost btn-sm">แก้ไข</a><button type="button" class="btn btn-ghost btn-sm">ลบ</button></div></td>
+          </tr>
+          <tr>
+            <td class="num">5</td>
+            <td><strong>Xiaomi 14</strong></td>
+            <td><span class="badge badge-muted">ปิดใช้งาน</span></td>
+            <td>8 สิงหาคม 2569</td>
+            <td><div class="row-actions"><a href="settings-model-form.html" class="btn btn-ghost btn-sm">ดู</a><a href="settings-model-form.html" class="btn btn-ghost btn-sm">แก้ไข</a><button type="button" class="btn btn-ghost btn-sm">ลบ</button></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pagination">
+      <div class="page-info">แสดง 1–5 จาก 12 รายการ</div>
+      <div class="pages"><button class="page-btn" type="button">‹</button><button class="page-btn active" type="button">1</button><button class="page-btn" type="button">2</button><button class="page-btn" type="button">3</button><button class="page-btn" type="button">›</button></div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+</body>
+</html>

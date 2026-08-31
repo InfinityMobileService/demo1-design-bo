@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เพิ่มระดับเงินกู้ — บ้านมือถือ MBH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css">
+</head>
+<body>
+<div class="app">
+<script>window.PAGE = { active: "settings-user-level", title: "เพิ่มระดับเงินกู้", crumbs: ["ตั้งค่าระบบ", "ระดับเงินกู้", "เพิ่มข้อมูล"] };</script>
+<script src="assets/layout.js"></script>
+<div class="main">
+<div class="content">
+
+  <div class="page-head">
+    <div><div class="page-title">เพิ่มระดับเงินกู้</div><div class="page-desc">กำหนดสิทธิ์และเงื่อนไขเบื้องต้นสำหรับแต่ละระดับลูกค้า</div></div>
+    <div class="page-actions"><a href="settings-user-level-list.html" class="btn btn-outline"><i data-lucide="arrow-left"></i> กลับรายการ</a></div>
+  </div>
+
+  <form>
+    <div class="card card-pad">
+      <div class="form-section-title">ข้อมูลระดับเงินกู้</div>
+      <div class="form-grid">
+        <div class="field full"><label for="level-name">ชื่อระดับ <span class="req">*</span></label><input id="level-name" name="name" type="text" value="Silver" placeholder="เช่น VIP, Silver, Gold" required><div class="hint">ชื่อที่จะแสดงในข้อมูลลูกค้าและขั้นตอนพิจารณาสินเชื่อ</div></div>
+        <div class="field"><label for="level-color">สีประจำระดับ <span class="req">*</span></label><input id="level-color" name="color" type="color" class="input" value="#c0c0c0" required><div class="hint">ใช้แยกแยะระดับลูกค้าในหน้ารายการ</div></div>
+        <div class="field"><label for="loan-count">จำนวนครั้งที่กู้ <span class="req">*</span></label><input id="loan-count" name="loan_count" type="number" value="6" min="0" required><div class="hint">จำนวนครั้งขั้นต่ำที่ลูกค้าเคยกู้</div></div>
+        <div class="field"><label for="level-interest">ดอกเบี้ย (%) <span class="req">*</span></label><input id="level-interest" name="interest_rate" type="number" value="10" min="0" step="0.01" required><div class="hint">อัตราดอกเบี้ยที่ใช้กับลูกค้าระดับนี้</div></div>
+      </div>
+    </div>
+    <div class="form-footer"><a href="settings-user-level-list.html" class="btn btn-outline">ยกเลิก</a><button type="button" class="btn btn-primary">บันทึก</button></div>
+  </form>
+
+</div>
+</div>
+</div>
+</body>
+</html>

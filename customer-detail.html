@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>โปรไฟล์ลูกค้า — บ้านมือถือ MBH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css">
+</head>
+<body>
+<div class="app">
+<script>window.PAGE = { active: "customer-list", title: "โปรไฟล์ลูกค้า", crumbs: ["ลูกค้า", "สมชาย ใจดี"] };</script>
+<script src="assets/layout.js"></script>
+<div class="main">
+<div class="content">
+
+  <div class="page-head">
+    <div style="display:flex;align-items:center;gap:14px">
+      <div class="avatar avatar-lg">สจ</div>
+      <div>
+        <div class="page-title">สมชาย ใจดี</div>
+        <div class="page-desc">ID 1024 · 081-234-5678 · สมัคร 12 มี.ค. 2568</div>
+      </div>
+    </div>
+    <div class="page-actions">
+      <a href="customer-list.html" class="btn btn-outline"><i data-lucide="arrow-left"></i> กลับ</a>
+      <a href="customer-form.html" class="btn btn-primary"><i data-lucide="pencil"></i> แก้ไขข้อมูล</a>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-ico"><i data-lucide="book-open"></i></div>
+      <div class="stat-label">สัญญาทั้งหมด</div>
+      <div class="stat-value">3</div>
+      <div class="stat-trend" style="color:var(--muted)">กู้มาแล้ว 3 ครั้ง</div>
+    </div>
+    <div class="stat">
+      <div class="stat-ico"><i data-lucide="wallet"></i></div>
+      <div class="stat-label">ยอดรวมที่กู้</div>
+      <div class="stat-value">฿59,900</div>
+      <div class="stat-trend trend-up">วงเงินปัจจุบัน ฿28,000</div>
+    </div>
+    <div class="stat">
+      <div class="stat-ico"><i data-lucide="alarm-clock"></i></div>
+      <div class="stat-label">สถานะปัจจุบัน</div>
+      <div class="stat-value" style="font-size:20px;margin-top:10px"><span class="badge badge-warning">ผ่อนชำระ</span></div>
+      <div class="stat-trend trend-down">ค้าง 12 วัน · LN-2568-0912</div>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <a class="tab active" href="#tab-profile">ข้อมูลส่วนตัว</a>
+    <a class="tab" href="#tab-loans">สินเชื่อของลูกค้า</a>
+    <a class="tab" href="#tab-docs">เอกสาร</a>
+  </div>
+
+  <div class="card mb-20" id="tab-profile">
+    <div class="card-pad">
+      <div class="form-section-title"><i data-lucide="user"></i> ข้อมูลติดต่อ</div>
+      <div class="form-grid">
+        <div class="field">
+          <label>ชื่อ-นามสกุล</label>
+          <div>สมชาย ใจดี</div>
+        </div>
+        <div class="field">
+          <label>เบอร์โทรศัพท์</label>
+          <div>081-234-5678</div>
+        </div>
+        <div class="field">
+          <label>ชื่อ Facebook</label>
+          <div>สมชาย ใจดี</div>
+        </div>
+        <div class="field">
+          <label>ลิงก์ Facebook</label>
+          <div>facebook.com/somchai.jaidee</div>
+        </div>
+        <div class="field">
+          <label>อายุ</label>
+          <div>34 ปี</div>
+        </div>
+        <div class="field">
+          <label>จำนวนครั้งที่กู้</label>
+          <div>3</div>
+        </div>
+        <div class="field">
+          <label>สถานะลูกค้า</label>
+          <div><span class="badge badge-warning">ผ่อนชำระ</span></div>
+        </div>
+        <div class="field">
+          <label>วันที่สร้าง</label>
+          <div>12 มี.ค. 2568</div>
+        </div>
+      </div>
+
+      <div class="form-section-title mt-20"><i data-lucide="file-text"></i> บันทึก</div>
+      <div class="form-grid">
+        <div class="field">
+          <label>บันทึกข้อมูล</label>
+          <div>ลูกค้าเก่า สาขาราชพฤกษ์ ติดต่อสะดวกช่วงเย็นหลัง 18:00</div>
+        </div>
+        <div class="field">
+          <label>บันทึกปัญหา</label>
+          <div>งวดล่าสุดโอนช้า 2 ครั้ง — นัดติดตามทุกวันพุธ</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-20" id="tab-loans">
+    <div class="card-head">
+      <div class="card-title">สินเชื่อของ สมชาย ใจดี</div>
+      <a href="loan-list.html" class="btn btn-outline btn-sm"><i data-lucide="plus"></i> สร้างสินเชื่อ</a>
+    </div>
+    <div class="table-wrap">
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th class="num">ลำดับ</th>
+            <th>สัญญา</th>
+            <th>ประเภทกู้</th>
+            <th>รุ่นสินค้า</th>
+            <th>สถานะเงินกู้</th>
+            <th class="num">จำนวนเงิน</th>
+            <th>วันที่สร้าง</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="num">1</td>
+            <td>LN-2568-0912</td>
+            <td>กู้รายวัน</td>
+            <td>iPhone 15 Pro</td>
+            <td><span class="badge badge-danger">เกินกำหนด</span></td>
+            <td class="num">฿28,000</td>
+            <td>6 ส.ค. 2569</td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm" style="color:var(--danger)">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="num">2</td>
+            <td>LN-2568-0440</td>
+            <td>ผ่อนชำระ 3 งวด</td>
+            <td>Samsung S24</td>
+            <td><span class="badge badge-success">ดำเนินการอยู่</span></td>
+            <td class="num">฿19,900</td>
+            <td>18 พ.ค. 2569</td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm" style="color:var(--danger)">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="num">3</td>
+            <td>LN-2568-0188</td>
+            <td>กู้รายเดือน 30 วัน</td>
+            <td>iPhone 13</td>
+            <td><span class="badge badge-muted">ปิดบัญชี</span></td>
+            <td class="num">฿12,000</td>
+            <td>12 มี.ค. 2568</td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm" style="color:var(--danger)">ลบ</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pagination">
+      <div class="page-info">แสดง 1–3 จาก 3 สัญญา</div>
+      <div class="pages">
+        <button class="page-btn">‹</button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn">›</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="tab-docs">
+    <div class="card-pad">
+      <div class="form-section-title"><i data-lucide="paperclip"></i> เอกสารลูกค้า</div>
+      <div class="grid-3">
+        <div class="field">
+          <div class="upload-box">
+            <span class="big"><i data-lucide="qr-code"></i></span>
+            <b>QR Code ไลน์ตนเอง</b>
+            <div class="hint">line-qr-somchai.jpg</div>
+          </div>
+        </div>
+        <div class="field">
+          <div class="upload-box">
+            <span class="big"><i data-lucide="id-card"></i></span>
+            <b>รูปคู่บัตรประชาชน</b>
+            <div class="hint">id-card-selfie.jpg</div>
+          </div>
+        </div>
+        <div class="field">
+          <div class="upload-box">
+            <span class="big"><i data-lucide="landmark"></i></span>
+            <b>รูปสมุดบัญชี</b>
+            <div class="hint">kbank-123-4-56789-0.jpg</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section-title mt-20"><i data-lucide="smartphone"></i> ภาพหน้าจอเครื่อง (สัญญา LN-2568-0912)</div>
+      <div class="grid-2">
+        <div class="field">
+          <div class="upload-box">
+            <span class="big"><i data-lucide="smartphone"></i></span>
+            <b>หน้าจอที่ 1</b>
+            <div class="hint">screen-1-settings.jpg</div>
+          </div>
+        </div>
+        <div class="field">
+          <div class="upload-box">
+            <span class="big"><i data-lucide="smartphone"></i></span>
+            <b>หน้าจอที่ 2</b>
+            <div class="hint">screen-2-icloud.jpg</div>
+          </div>
+        </div>
+        <div class="field">
+          <div class="upload-box">
+            <span class="big"><i data-lucide="smartphone"></i></span>
+            <b>หน้าจอที่ 3</b>
+            <div class="hint">screen-3-imei.jpg</div>
+          </div>
+        </div>
+        <div class="field">
+          <div class="upload-box">
+            <span class="big"><i data-lucide="smartphone"></i></span>
+            <b>หน้าจอที่ 4</b>
+            <div class="hint">screen-4-findmy.jpg</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+</body>
+</html>

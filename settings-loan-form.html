@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เพิ่มข้อมูลเงินกู้ — บ้านมือถือ MBH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css">
+</head>
+<body>
+<div class="app">
+<script>window.PAGE = { active: "settings-loan", title: "เพิ่มข้อมูลเงินกู้", crumbs: ["ตั้งค่าระบบ", "เงินกู้", "เพิ่มข้อมูล"] };</script>
+<script src="assets/layout.js"></script>
+<div class="main">
+<div class="content">
+
+  <div class="page-head">
+    <div><div class="page-title">เพิ่มข้อมูลเงินกู้</div><div class="page-desc">กำหนดเงื่อนไขการชำระเงินกู้สำหรับใช้งานในระบบ</div></div>
+    <div class="page-actions"><a href="settings-loan-list.html" class="btn btn-outline"><i data-lucide="arrow-left"></i> กลับรายการ</a></div>
+  </div>
+
+  <form>
+    <div class="card card-pad">
+      <div class="form-section-title">ข้อมูลหลักของเงินกู้</div>
+      <div class="form-grid">
+        <div class="field full"><label for="loan-name">ชื่อเงินกู้ <span class="req">*</span></label><input id="loan-name" name="name" type="text" value="สินเชื่อรายวัน 30 งวด" placeholder="กรอกชื่อเงินกู้" required><div class="hint">ชื่อจะแสดงให้เจ้าหน้าที่เลือกตอนสร้างสัญญา</div></div>
+        <div class="field"><label for="loan-type">รูปแบบการชำระ <span class="req">*</span></label><select id="loan-type" name="loan_type_id" required><option>รายวัน</option><option>รายสัปดาห์</option><option>รายเดือน</option></select><div class="hint">เลือกประเภทรายวัน / รายสัปดาห์ / รายเดือน</div></div>
+        <div class="field"><label for="schedule-day">ระยะเวลาการชำระ (วัน) <span class="req">*</span></label><input id="schedule-day" name="schedule_day" type="number" value="1" min="1" required><div class="hint">กำหนดให้ชำระทุกกี่วัน</div></div>
+        <div class="field"><label for="total-installment">งวดทั้งหมด <span class="req">*</span></label><input id="total-installment" name="total_installment" type="number" value="30" min="1" required><div class="hint">จำนวนงวดของสัญญานี้</div></div>
+      </div>
+    </div>
+
+    <div class="card card-pad mt-20">
+      <div class="form-section-title">ดอกเบี้ยและค่าปรับ</div>
+      <div class="form-grid">
+        <div class="field"><label for="interest-rate">ดอกเบี้ย (%) <span class="req">*</span></label><input id="interest-rate" name="interest_rate" type="number" value="12.5" min="0" step="0.01" required><div class="hint">ตัวอย่าง 12.50 หมายถึงอัตราดอกเบี้ย 12.5%</div></div>
+        <div class="field"><label for="late-charge">ค่าปรับต่อวัน (บาท)</label><input id="late-charge" name="daily_late_charge" type="number" value="50" min="0" step="1"><div class="hint">คิดเมื่อลูกค้าชำระเกินกำหนด</div></div>
+        <div class="field full"><label><input type="checkbox" name="is_interest_extension" checked> มีการคิดดอกเบี้ยต่อเดือน</label><div class="hint">เปิดใช้เมื่อสัญญาที่ยังไม่ปิดมีการคิดดอกเบี้ยต่อเนื่อง</div></div>
+      </div>
+    </div>
+
+    <div class="form-footer"><a href="settings-loan-list.html" class="btn btn-outline">ยกเลิก</a><button type="button" class="btn btn-primary">บันทึก</button></div>
+  </form>
+
+</div>
+</div>
+</div>
+</body>
+</html>

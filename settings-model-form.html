@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เพิ่มรุ่นโทรศัพท์ — บ้านมือถือ MBH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css">
+</head>
+<body>
+<div class="app">
+<script>window.PAGE = { active: "settings-model", title: "เพิ่มรุ่นโทรศัพท์", crumbs: ["ตั้งค่าระบบ", "รุ่นโทรศัพท์", "เพิ่มข้อมูล"] };</script>
+<script src="assets/layout.js"></script>
+<div class="main">
+<div class="content">
+
+  <div class="page-head">
+    <div>
+      <div class="page-title">เพิ่มรุ่นโทรศัพท์</div>
+      <div class="page-desc">กรอกข้อมูลรุ่นโทรศัพท์ที่ต้องการเปิดใช้งานในระบบ</div>
+    </div>
+    <div class="page-actions"><a href="settings-model-list.html" class="btn btn-outline"><i data-lucide="arrow-left"></i> กลับรายการ</a></div>
+  </div>
+
+  <form>
+    <div class="card card-pad">
+      <div class="form-section-title">ข้อมูลรุ่นโทรศัพท์</div>
+      <div class="form-grid">
+        <div class="field full">
+          <label for="model-name">ชื่อรุ่น <span class="req">*</span></label>
+          <input id="model-name" name="name" type="text" value="iPhone 15 Pro Max" placeholder="เช่น iPhone 15 Pro Max" required>
+          <div class="hint">ใช้ชื่อรุ่นที่ตรงกับสินค้าที่รับเป็นหลักประกัน เช่น iPhone 14 หรือ Samsung Galaxy S24</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-pad mt-20">
+      <div class="form-section-title">รายการราคา</div>
+      <div class="page-desc mb-20">กำหนดวงเงินสูงสุดของรุ่นนี้แยกตามประเภทเงินกู้</div>
+      <div class="table-wrap">
+        <table class="tbl">
+          <thead><tr><th>เลือก</th><th>ชื่อรายการเงินกู้</th><th class="num">ราคา (บาท)</th></tr></thead>
+          <tbody>
+            <tr><td><input type="checkbox" checked aria-label="เลือกสินเชื่อรายวัน"></td><td>สินเชื่อรายวัน 30 งวด</td><td class="num"><input class="input" type="number" value="28000" min="0" step="500" aria-label="ราคาสินเชื่อรายวัน 30 งวด"></td></tr>
+            <tr><td><input type="checkbox" checked aria-label="เลือกสินเชื่อรายเดือน"></td><td>สินเชื่อรายเดือน 6 งวด</td><td class="num"><input class="input" type="number" value="32000" min="0" step="500" aria-label="ราคาสินเชื่อรายเดือน 6 งวด"></td></tr>
+            <tr><td><input type="checkbox" checked aria-label="เลือกสินเชื่อพิเศษ"></td><td>สินเชื่อพิเศษลูกค้าประจำ</td><td class="num"><input class="input" type="number" value="35000" min="0" step="500" aria-label="ราคาสินเชื่อพิเศษลูกค้าประจำ"></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="page-desc mt-20">ตัวอย่างราคาสำหรับ iPhone 15 Pro Max — รายการที่ไม่เลือกจะไม่แสดงในขั้นตอนสร้างสินเชื่อ</div>
+    </div>
+
+    <div class="form-footer"><a href="settings-model-list.html" class="btn btn-outline">ยกเลิก</a><button type="button" class="btn btn-primary">บันทึก</button></div>
+  </form>
+
+</div>
+</div>
+</div>
+</body>
+</html>

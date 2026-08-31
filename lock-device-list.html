@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ข้อมูลล็อกเครื่อง — บ้านมือถือ MBH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css">
+</head>
+<body>
+<div class="app">
+<script>window.PAGE = { active: "lock-device", title: "ข้อมูลล็อกเครื่อง", crumbs: ["ล็อกเครื่อง", "ข้อมูลล็อกเครื่อง"] };</script>
+<script src="assets/layout.js"></script>
+
+<div class="main">
+<div class="content">
+
+  <div class="page-head">
+    <div>
+      <div class="page-title">ข้อมูลล็อกเครื่อง <i data-lucide="lock"></i></div>
+      <div class="page-desc">รายการเครื่องที่ถูกล็อกเนื่องจากค้างชำระ</div>
+    </div>
+    <div class="page-actions">
+      <button class="btn btn-outline"><i data-lucide="download"></i> ส่งออก Excel</button>
+      <button class="btn btn-primary"><i data-lucide="plus"></i> ล็อกเครื่องใหม่</button>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="stat-ico"><i data-lucide="lock"></i></div><div class="stat-label">ล็อกอยู่ทั้งหมด</div><div class="stat-value">14</div></div>
+    <div class="stat"><div class="stat-ico"><i data-lucide="hourglass"></i></div><div class="stat-label">รอปลดล็อก</div><div class="stat-value">3</div></div>
+    <div class="stat"><div class="stat-ico"><i data-lucide="lock-open"></i></div><div class="stat-label">ปลดล็อกเดือนนี้</div><div class="stat-value">21</div></div>
+    <div class="stat"><div class="stat-ico"><i data-lucide="wallet"></i></div><div class="stat-label">ยอดค้างรวม</div><div class="stat-value">฿94,300</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="toolbar">
+        <div class="search"><span class="ico"><i data-lucide="search"></i></span><input placeholder="ค้นหาชื่อลูกค้า / ชื่อ Facebook"></div>
+        <select class="select"><option>สถานะทั้งหมด</option><option>ล็อกอยู่</option><option>รอปลดล็อก</option><option>ปลดล็อกแล้ว</option></select>
+        <select class="select"><option>ประเภทสินเชื่อทั้งหมด</option><option>ผ่อนรายวัน</option><option>ผ่อนรายเดือน</option></select>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th>ชื่อ Facebook</th>
+            <th>ชื่อลูกค้า</th>
+            <th>รุ่นเครื่อง</th>
+            <th>ประเภทสินเชื่อ</th>
+            <th class="num">จำนวนเงิน</th>
+            <th>วันที่ล็อก</th>
+            <th>สถานะ</th>
+            <th style="text-align:right">จัดการ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Somchai Jaidee</td><td>สมชาย ใจดี</td><td>iPhone 15 Pro</td><td>ผ่อนรายวัน</td>
+            <td class="num">฿4,800</td><td>10 ส.ค. 2569</td>
+            <td><span class="badge badge-danger">ล็อกอยู่</span></td>
+            <td><div class="row-actions"><button class="btn btn-ghost btn-sm">ดู</button><button class="btn btn-outline btn-sm"><i data-lucide="lock-open"></i> ปลดล็อก</button></div></td>
+          </tr>
+          <tr>
+            <td>Waraporn TS</td><td>วราภรณ์ ทองสุข</td><td>iPhone 14</td><td>ผ่อนรายวัน</td>
+            <td class="num">฿2,100</td><td>12 ส.ค. 2569</td>
+            <td><span class="badge badge-danger">ล็อกอยู่</span></td>
+            <td><div class="row-actions"><button class="btn btn-ghost btn-sm">ดู</button><button class="btn btn-outline btn-sm"><i data-lucide="lock-open"></i> ปลดล็อก</button></div></td>
+          </tr>
+          <tr>
+            <td>Anucha St</td><td>อนุชา แสงทอง</td><td>Samsung S24</td><td>ผ่อนรายเดือน</td>
+            <td class="num">฿6,500</td><td>14 ส.ค. 2569</td>
+            <td><span class="badge badge-warning">รอปลดล็อก</span></td>
+            <td><div class="row-actions"><button class="btn btn-ghost btn-sm">ดู</button><button class="btn btn-outline btn-sm"><i data-lucide="lock-open"></i> ปลดล็อก</button></div></td>
+          </tr>
+          <tr>
+            <td>Kamolchanok P.</td><td>กมลชนก พูลสวัสดิ์</td><td>iPhone 13</td><td>ผ่อนรายวัน</td>
+            <td class="num">฿1,900</td><td>15 ส.ค. 2569</td>
+            <td><span class="badge badge-warning">รอปลดล็อก</span></td>
+            <td><div class="row-actions"><button class="btn btn-ghost btn-sm">ดู</button><button class="btn btn-outline btn-sm"><i data-lucide="lock-open"></i> ปลดล็อก</button></div></td>
+          </tr>
+          <tr>
+            <td>Teerapat M.</td><td>ธีรภัทร มั่นคง</td><td>iPhone 15</td><td>ผ่อนรายเดือน</td>
+            <td class="num">฿8,200</td><td>1 ส.ค. 2569</td>
+            <td><span class="badge badge-success">ปลดล็อกแล้ว</span></td>
+            <td><div class="row-actions"><button class="btn btn-ghost btn-sm">ดู</button></div></td>
+          </tr>
+          <tr>
+            <td>Piyada S.</td><td>ปิยะดา ศรีสุวรรณ</td><td>OPPO Reno 11</td><td>ผ่อนรายวัน</td>
+            <td class="num">฿3,400</td><td>5 ส.ค. 2569</td>
+            <td><span class="badge badge-success">ปลดล็อกแล้ว</span></td>
+            <td><div class="row-actions"><button class="btn btn-ghost btn-sm">ดู</button></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pagination">
+      <div class="page-info">แสดง 1–6 จาก 14 รายการ</div>
+      <div class="pages">
+        <button class="page-btn">‹</button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">›</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+</body>
+</html>

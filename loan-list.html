@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ข้อมูลสินเชื่อ — บ้านมือถือ MBH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css">
+</head>
+<body>
+<div class="app">
+<script>window.PAGE = { active: "loan-list", title: "ข้อมูลสินเชื่อ", crumbs: ["สินเชื่อ", "ข้อมูลสินเชื่อ"] };</script>
+<script src="assets/layout.js"></script>
+
+<div class="main">
+<div class="content">
+
+  <div class="page-head">
+    <div>
+      <div class="page-title">ข้อมูลสินเชื่อ</div>
+      <div class="page-desc">รายการสัญญาทั้งหมดในระบบ · อัปเดต 18 สิงหาคม 2569</div>
+    </div>
+    <div class="page-actions">
+      <button class="btn btn-outline"><i data-lucide="download"></i> ส่งออก Excel</button>
+      <a href="customer-list.html" class="btn btn-primary"><i data-lucide="plus"></i> สร้างสินเชื่อใหม่</a>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-ico"><i data-lucide="book-open"></i></div>
+      <div class="stat-label">สัญญาทั้งหมด</div>
+      <div class="stat-value">1,248</div>
+      <div class="stat-trend trend-up"><i data-lucide="trending-up"></i> 12 สัญญาใหม่วันนี้</div>
+    </div>
+    <div class="stat">
+      <div class="stat-ico"><i data-lucide="circle-check"></i></div>
+      <div class="stat-label">ดำเนินการอยู่</div>
+      <div class="stat-value">986</div>
+      <div class="stat-trend" style="color:var(--muted)">79% ของสัญญาทั้งหมด</div>
+    </div>
+    <div class="stat">
+      <div class="stat-ico"><i data-lucide="alarm-clock"></i></div>
+      <div class="stat-label">เกินกำหนด</div>
+      <div class="stat-value">37</div>
+      <div class="stat-trend trend-down"><i data-lucide="trending-down"></i> ต้องติดตามด่วน 9 ราย</div>
+    </div>
+    <div class="stat">
+      <div class="stat-ico"><i data-lucide="lock"></i></div>
+      <div class="stat-label">ปิดบัญชี</div>
+      <div class="stat-value">225</div>
+      <div class="stat-trend" style="color:var(--muted)">เดือนนี้ปิด 18 สัญญา</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="toolbar">
+        <div class="search"><span class="ico"><i data-lucide="search"></i></span><input placeholder="ค้นหาชื่อลูกค้า / เลขสัญญา / รุ่นเครื่อง"></div>
+        <select class="select">
+          <option>สถานะทั้งหมด</option>
+          <option>ดำเนินการอยู่</option>
+          <option>รอตรวจสอบ</option>
+          <option>เกินกำหนด</option>
+          <option>ปิดบัญชี</option>
+        </select>
+        <select class="select">
+          <option>ประเภทกู้ทั้งหมด</option>
+          <option>เรทรายวัน</option>
+          <option>ผ่อน 7 วัน</option>
+          <option>ผ่อน 15 วัน</option>
+          <option>ผ่อนรายเดือน</option>
+        </select>
+        <input class="select" type="date" value="2026-07-18">
+        <input class="select" type="date" value="2026-08-18">
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th>สัญญา</th>
+            <th class="num">จำนวนครั้ง</th>
+            <th>ชื่อลูกค้า</th>
+            <th>ประเภทกู้</th>
+            <th>รุ่นสินค้า</th>
+            <th class="num">จำนวนเงิน</th>
+            <th>วันที่สร้าง</th>
+            <th>สถานะเงินกู้</th>
+            <th style="text-align:right">จัดการ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="loan-detail.html" style="font-weight:600">LN-2568-1120</a></td>
+            <td class="num">2</td>
+            <td>ปิยะดา ศรีสุวรรณ</td>
+            <td>ผ่อนรายเดือน</td>
+            <td>iPhone 15 Pro</td>
+            <td class="num">฿30,240</td>
+            <td>2 มี.ค. 2569</td>
+            <td><span class="badge badge-success">ดำเนินการอยู่</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="loan-detail.html" style="font-weight:600">LN-2568-1119</a></td>
+            <td class="num">1</td>
+            <td>ณัฐพล บุญมา</td>
+            <td>เรทรายวัน</td>
+            <td>iPhone 14</td>
+            <td class="num">฿15,500</td>
+            <td>18 ส.ค. 2569</td>
+            <td><span class="badge badge-info">รอตรวจสอบ</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="loan-detail.html" style="font-weight:600">LN-2568-1118</a></td>
+            <td class="num">3</td>
+            <td>ศิริพร คงเมือง</td>
+            <td>ผ่อน 15 วัน</td>
+            <td>Samsung S24</td>
+            <td class="num">฿19,900</td>
+            <td>17 ส.ค. 2569</td>
+            <td><span class="badge badge-success">ดำเนินการอยู่</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="loan-detail.html" style="font-weight:600">LN-2568-1117</a></td>
+            <td class="num">4</td>
+            <td>จักรกฤษณ์ วงศ์ใหญ่</td>
+            <td>ผ่อน 7 วัน</td>
+            <td>iPhone 13</td>
+            <td class="num">฿12,000</td>
+            <td>10 ก.ค. 2569</td>
+            <td><span class="badge badge-muted">ปิดบัญชี</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="loan-detail.html" style="font-weight:600">LN-2568-1102</a></td>
+            <td class="num">1</td>
+            <td>ธีรภัทร มั่นคง</td>
+            <td>ผ่อนรายเดือน</td>
+            <td>iPhone 15</td>
+            <td class="num">฿22,400</td>
+            <td>1 ส.ค. 2569</td>
+            <td><span class="badge badge-warning">ติดตาม</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="loan-detail.html" style="font-weight:600">LN-2568-1044</a></td>
+            <td class="num">2</td>
+            <td>อนุชา แสงทอง</td>
+            <td>ผ่อนรายเดือน</td>
+            <td>Samsung S24</td>
+            <td class="num">฿18,600</td>
+            <td>28 ก.ค. 2569</td>
+            <td><span class="badge badge-warning">ติดตาม</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="loan-detail.html" style="font-weight:600">LN-2568-0912</a></td>
+            <td class="num">5</td>
+            <td>สมชาย ใจดี</td>
+            <td>เรทรายวัน</td>
+            <td>iPhone 15 Pro</td>
+            <td class="num">฿28,000</td>
+            <td>15 มิ.ย. 2569</td>
+            <td><span class="badge badge-danger">เกินกำหนด</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="loan-detail.html" style="font-weight:600">LN-2568-0877</a></td>
+            <td class="num">3</td>
+            <td>วราภรณ์ ทองสุข</td>
+            <td>เรทรายวัน</td>
+            <td>iPhone 14</td>
+            <td class="num">฿14,800</td>
+            <td>8 มิ.ย. 2569</td>
+            <td><span class="badge badge-danger">เกินกำหนด</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="loan-detail.html" style="font-weight:600">LN-2568-0765</a></td>
+            <td class="num">2</td>
+            <td>กมลชนก พูลสวัสดิ์</td>
+            <td>ผ่อน 15 วัน</td>
+            <td>iPhone 13</td>
+            <td class="num">฿11,200</td>
+            <td>20 พ.ค. 2569</td>
+            <td><span class="badge badge-warning">ติดตาม</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm">ลบ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="loan-detail.html" style="font-weight:600">LN-2568-0701</a></td>
+            <td class="num">1</td>
+            <td>อรุณี แสงจันทร์</td>
+            <td>ผ่อนรายเดือน</td>
+            <td>OPPO Reno 11</td>
+            <td class="num">฿9,800</td>
+            <td>12 พ.ค. 2569</td>
+            <td><span class="badge badge-success">ดำเนินการอยู่</span></td>
+            <td>
+              <div class="row-actions">
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">ดู</a>
+                <a href="loan-detail.html" class="btn btn-ghost btn-sm">แก้ไข</a>
+                <button class="btn btn-ghost btn-sm">ลบ</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pagination">
+      <div class="page-info">แสดง 1–10 จาก 1,248 รายการ</div>
+      <div class="pages">
+        <button class="page-btn">‹</button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">4</button>
+        <button class="page-btn">…</button>
+        <button class="page-btn">125</button>
+        <button class="page-btn">›</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>สร้างพนักงาน — บ้านมือถือ MBH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css">
+</head>
+<body>
+<div class="app">
+<script>window.PAGE = { active: "user-form", title: "สร้างพนักงาน", crumbs: ["พนักงาน", "สร้างพนักงาน"] };</script>
+<script src="assets/layout.js"></script>
+<div class="main">
+<div class="content">
+
+  <div class="page-head">
+    <div>
+      <div class="page-title">สร้างพนักงาน</div>
+      <div class="page-desc">เพิ่มบัญชีผู้ใช้ระบบหลังบ้าน</div>
+    </div>
+    <div class="page-actions">
+      <a href="user-list.html" class="btn btn-outline"><i data-lucide="arrow-left"></i> กลับ</a>
+    </div>
+  </div>
+
+  <div class="card card-pad">
+    <div class="form-section-title"><i data-lucide="users"></i> ข้อมูลพนักงาน</div>
+    <div class="form-grid">
+      <div class="field">
+        <label>ชื่อ-นามสกุล <span class="req">*</span></label>
+        <input type="text" placeholder="กรอกชื่อ-นามสกุล">
+      </div>
+      <div class="field">
+        <label>เบอร์โทรศัพท์ <span class="req">*</span></label>
+        <input type="tel" placeholder="08x-xxx-xxxx">
+        <div class="hint">เช่น 081-234-5678</div>
+      </div>
+      <div class="field">
+        <label>อีเมล <span class="req">*</span></label>
+        <input type="email" placeholder="name@mbh.co.th">
+        <div class="hint">ใช้เข้าสู่ระบบ</div>
+      </div>
+      <div class="field">
+        <label>รหัสผ่าน <span class="req">*</span></label>
+        <input type="password" placeholder="กรอกรหัสผ่าน">
+        <div class="hint">อย่างน้อย 6 ตัวอักษร — ถ้าแก้ไขพนักงาน เว้นว่างไว้หากไม่เปลี่ยนรหัส</div>
+      </div>
+      <div class="field full">
+        <label>สิทธิ์การเข้าถึง <span class="req">*</span></label>
+        <select>
+          <option selected value="">กรุณาเลือกสิทธิ์การเข้าถึง</option>
+          <option>ผู้ดูแลระบบ</option>
+          <option>สินเชื่อ</option>
+          <option>iCloud</option>
+        </select>
+        <div class="hint">ผู้ดูแลระบบเห็นทุกเมนู · สินเชื่อดูแลสัญญา · iCloud ดูแลเครื่องและรหัส</div>
+      </div>
+    </div>
+
+    <div class="form-footer">
+      <a href="user-list.html" class="btn btn-outline">ยกเลิก</a>
+      <button type="button" class="btn btn-primary">บันทึก</button>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+</body>
+</html>
