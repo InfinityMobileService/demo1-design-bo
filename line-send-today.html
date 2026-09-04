@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LINE ทวง — บ้านมือถือ MBH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css">
+</head>
+<body>
+<div class="app">
+<script>window.PAGE = { active: "line-send-today", title: "LINE ทวง", crumbs: ["เคาน์เตอร์", "LINE ทวง"] };</script>
+<script src="assets/layout.js"></script>
+<div class="main">
+<div class="content">
+
+  <div class="page-head">
+    <div>
+      <div class="page-title">LINE ทวงวันนี้</div>
+      <div class="page-desc">จันทร์ 18 สิงหาคม 2569 · ใครส่งสำเร็จ / ไม่สำเร็จ จากคิวทวงยอด</div>
+    </div>
+    <div class="page-actions">
+      <input class="select" type="date" value="2026-08-18">
+      <select class="select">
+        <option>สถานะทั้งหมด</option>
+        <option>ส่งสำเร็จ</option>
+        <option>ส่งไม่สำเร็จ</option>
+      </select>
+      <button class="btn btn-outline" type="button"><i data-lucide="download"></i> ส่งออก Excel</button>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-ico"><i data-lucide="send"></i></div>
+      <div class="stat-label">ส่งทั้งหมดวันนี้</div>
+      <div class="stat-value">19</div>
+      <div class="stat-trend" style="color:var(--muted)">กะเช้าสุภาพร 12 · กะบ่าย 7</div>
+    </div>
+    <div class="stat">
+      <div class="stat-ico"><i data-lucide="circle-check"></i></div>
+      <div class="stat-label">ส่งสำเร็จ</div>
+      <div class="stat-value">16</div>
+      <div class="stat-trend trend-up">84% · ถึง LINE ลูกค้าแล้ว</div>
+    </div>
+    <div class="stat">
+      <div class="stat-ico"><i data-lucide="circle-x"></i></div>
+      <div class="stat-label">ส่งไม่สำเร็จ</div>
+      <div class="stat-value">3</div>
+      <div class="stat-trend trend-down">ต้องส่งซ้ำหรือโทรตาม</div>
+    </div>
+    <div class="stat">
+      <div class="stat-ico"><i data-lucide="clock"></i></div>
+      <div class="stat-label">รอบล่าสุด</div>
+      <div class="stat-value" style="font-size:20px;margin-top:10px">16:20</div>
+      <div class="stat-trend" style="color:var(--muted)">คิวทวงงวดครบกำหนดวันนี้</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title">รายการส่ง LINE</div>
+      <div class="toolbar">
+        <div class="search"><span class="ico"><i data-lucide="search"></i></span><input placeholder="ค้นหาชื่อลูกค้า"></div>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th>เวลา</th>
+            <th>ลูกค้า</th>
+            <th>LINE</th>
+            <th>สัญญา</th>
+            <th>ข้อความ</th>
+            <th>สถานะ</th>
+            <th>สาเหตุ</th>
+            <th>ผู้ส่ง</th>
+            <th style="text-align:right">จัดการ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>08:05</td>
+            <td><a href="customer-detail.html" style="font-weight:600">สมชาย ใจดี</a></td>
+            <td>สมชาย ใจดี</td>
+            <td>LN-2568-0912</td>
+            <td>ทวงงวดค้าง 12 วัน ฿4,800</td>
+            <td><span class="badge badge-success">ส่งสำเร็จ</span></td>
+            <td style="color:var(--muted)">—</td>
+            <td>ระบบทวง</td>
+            <td><div class="row-actions"><a href="chat.html" class="btn btn-ghost btn-sm">แชท</a></div></td>
+          </tr>
+          <tr>
+            <td>08:05</td>
+            <td>วราภรณ์ ทองสุข</td>
+            <td>วราภรณ์ ทองสุข</td>
+            <td>LN-2568-0877</td>
+            <td>ทวงยอดคงเหลือ ฿350</td>
+            <td><span class="badge badge-success">ส่งสำเร็จ</span></td>
+            <td style="color:var(--muted)">—</td>
+            <td>ระบบทวง</td>
+            <td><div class="row-actions"><a href="chat.html" class="btn btn-ghost btn-sm">แชท</a></div></td>
+          </tr>
+          <tr>
+            <td>08:06</td>
+            <td>อนุชา แสงทอง</td>
+            <td>อนุชา แสงทอง</td>
+            <td>LN-2568-1044</td>
+            <td>ทวงค้าง 3 วัน ฿1,500</td>
+            <td><span class="badge badge-danger">ส่งไม่สำเร็จ</span></td>
+            <td>ลูกค้าบล็อก OA</td>
+            <td>ระบบทวง</td>
+            <td>
+              <div class="row-actions">
+                <a href="customer-detail.html" class="btn btn-ghost btn-sm">โปรไฟล์</a>
+                <button class="btn btn-outline btn-sm" type="button">ส่งซ้ำ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>08:06</td>
+            <td>กมลชนก พูลสวัสดิ์</td>
+            <td>กมลชนก พ.</td>
+            <td>LN-2568-0765</td>
+            <td>ทวงค้าง 2 วัน ฿900</td>
+            <td><span class="badge badge-success">ส่งสำเร็จ</span></td>
+            <td style="color:var(--muted)">—</td>
+            <td>ระบบทวง</td>
+            <td><div class="row-actions"><a href="chat.html" class="btn btn-ghost btn-sm">แชท</a></div></td>
+          </tr>
+          <tr>
+            <td>08:07</td>
+            <td>ธีรภัทร มั่นคง</td>
+            <td>ธีรภัทร มั่นคง</td>
+            <td>LN-2568-1102</td>
+            <td>แจ้งครบกำหนดวันนี้ ฿650</td>
+            <td><span class="badge badge-success">ส่งสำเร็จ</span></td>
+            <td style="color:var(--muted)">—</td>
+            <td>ระบบทวง</td>
+            <td><div class="row-actions"><a href="chat.html" class="btn btn-ghost btn-sm">แชท</a></div></td>
+          </tr>
+          <tr>
+            <td>12:10</td>
+            <td>ศิริพร คงเมือง</td>
+            <td>—</td>
+            <td>LN-2568-0880</td>
+            <td>ทวงยอดค้าง ฿1,245</td>
+            <td><span class="badge badge-danger">ส่งไม่สำเร็จ</span></td>
+            <td>ยังไม่เชื่อม LINE</td>
+            <td>สุภาพร วงศ์คำ</td>
+            <td>
+              <div class="row-actions">
+                <a href="customer-detail.html" class="btn btn-ghost btn-sm">โปรไฟล์</a>
+                <a href="tel:0819903344" class="btn btn-outline btn-sm">โทร</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>16:20</td>
+            <td>ณัฐพล บุญมา</td>
+            <td>ณัฐพล บุญมา</td>
+            <td>LN-2568-0812</td>
+            <td>แจ้งยอดรอยืนยันสลิป ฿650</td>
+            <td><span class="badge badge-danger">ส่งไม่สำเร็จ</span></td>
+            <td>LINE หมดเวลา</td>
+            <td>ระบบทวง</td>
+            <td>
+              <div class="row-actions">
+                <button class="btn btn-outline btn-sm" type="button">ส่งซ้ำ</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>16:20</td>
+            <td>อรุณี แสงจันทร์</td>
+            <td>อรุณี แสงจันทร์</td>
+            <td>LN-2568-1115</td>
+            <td>ขอบคุณที่ทำสัญญาวานนี้</td>
+            <td><span class="badge badge-success">ส่งสำเร็จ</span></td>
+            <td style="color:var(--muted)">—</td>
+            <td>สุภาพร วงศ์คำ</td>
+            <td><div class="row-actions"><a href="chat.html" class="btn btn-ghost btn-sm">แชท</a></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pagination">
+      <div class="page-info">แสดง 8 จาก 19 รายการ · สำเร็จ 16 · ไม่สำเร็จ 3</div>
+      <div class="pages">
+        <button class="page-btn active" type="button">1</button>
+        <button class="page-btn" type="button">2</button>
+        <button class="page-btn" type="button">3</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+</body>
+</html>

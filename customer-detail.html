@@ -7,6 +7,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/theme.css">
+<style>
+  .cust-who { display: flex; align-items: center; gap: 14px; min-width: 0; }
+  .line-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 6px; font-size: 12.5px; color: var(--brown-700); }
+  .line-mark {
+    display: inline-grid; place-items: center;
+    height: 16px; padding: 0 5px;
+    border-radius: 4px;
+    background: #06C755; color: #fff;
+    font-size: 9px; font-weight: 700; letter-spacing: .03em;
+  }
+  .modal h2 { font-size: 18px; font-weight: 650; margin-bottom: 4px; }
+  .modal .lead { font-size: 13px; color: var(--muted); margin-bottom: 16px; }
+  .line-quick-ok { font-size: 12.5px; font-weight: 600; color: var(--success); align-self: center; margin-right: auto; }
+</style>
 </head>
 <body>
 <div class="app">
@@ -16,15 +30,23 @@
 <div class="content">
 
   <div class="page-head">
-    <div style="display:flex;align-items:center;gap:14px">
+    <div class="cust-who">
       <div class="avatar avatar-lg">สจ</div>
       <div>
         <div class="page-title">สมชาย ใจดี</div>
         <div class="page-desc">ID 1024 · 081-234-5678 · สมัคร 12 มี.ค. 2568</div>
+        <div class="line-link">
+          <span class="line-mark">LINE</span>
+          เชื่อมแล้ว · <b>สมชาย ใจดี</b>
+          <span class="badge badge-success">ออนไลน์</span>
+        </div>
       </div>
     </div>
     <div class="page-actions">
       <a href="customer-list.html" class="btn btn-outline"><i data-lucide="arrow-left"></i> กลับ</a>
+      <button class="btn btn-outline" type="button" id="line-compose-btn" aria-haspopup="dialog" aria-controls="line-msg-modal">
+        <i data-lucide="message-circle"></i> ส่งข้อความ
+      </button>
       <a href="customer-form.html" class="btn btn-primary"><i data-lucide="pencil"></i> แก้ไขข้อมูล</a>
     </div>
   </div>
@@ -253,5 +275,65 @@
 </div>
 </div>
 </div>
+
+<div id="line-msg-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="line-msg-title" hidden>
+  <form class="modal" id="line-quick">
+    <h2 id="line-msg-title">ส่งข้อความ LINE</h2>
+    <p class="lead">ถึง <b>สมชาย ใจดี</b> · เชื่อมแล้ว · ออนไลน์</p>
+    <div class="field">
+      <label for="line-msg">ข้อความ</label>
+      <textarea id="line-msg" name="q" rows="4" maxlength="500" placeholder="พิมพ์ข้อความถึง LINE สมชาย ใจดี" required></textarea>
+      <div class="hint" id="line-msg-count">0/500</div>
+    </div>
+    <div class="form-footer">
+      <span class="line-quick-ok" id="line-quick-ok" hidden>ส่งแล้ว</span>
+      <button class="btn btn-outline" type="button" id="line-msg-cancel">ยกเลิก</button>
+      <button class="btn btn-primary" type="submit"><i data-lucide="send"></i> ส่ง</button>
+    </div>
+  </form>
+</div>
+<script>
+  (function () {
+    var modal = document.getElementById("line-msg-modal");
+    var form = document.getElementById("line-quick");
+    var input = document.getElementById("line-msg");
+    var count = document.getElementById("line-msg-count");
+    var ok = document.getElementById("line-quick-ok");
+    var btn = document.getElementById("line-compose-btn");
+    function syncCount() {
+      count.textContent = input.value.length + "/500";
+    }
+    function openModal() {
+      modal.hidden = false;
+      modal.classList.add("show");
+      syncCount();
+      input.focus();
+    }
+    function closeModal() {
+      modal.classList.remove("show");
+      modal.hidden = true;
+      ok.hidden = true;
+      input.value = "";
+      syncCount();
+    }
+    btn.addEventListener("click", openModal);
+    document.getElementById("line-msg-cancel").addEventListener("click", closeModal);
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) closeModal();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && modal.classList.contains("show")) closeModal();
+    });
+    input.addEventListener("input", syncCount);
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!input.value.trim()) { input.focus(); return; }
+      input.value = "";
+      ok.hidden = false;
+      clearTimeout(ok._t);
+      ok._t = setTimeout(closeModal, 900);
+    });
+  })();
+</script>
 </body>
 </html>

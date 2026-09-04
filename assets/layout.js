@@ -9,11 +9,14 @@
   var STATIONS = [
     {
       id: "counter", no: "01", name: "เคาน์เตอร์", href: "dashboard.html",
-      ids: ["dashboard", "daily-loan", "daily-loan-summary"],
+      ids: ["dashboard", "daily-loan", "daily-loan-summary", "cash-flow-today", "contracts-today", "line-send-today"],
       tools: [
         { id: "dashboard", href: "dashboard.html", label: "คิวเก็บ" },
         { id: "daily-loan", href: "daily-loan.html", label: "ตรวจสลิป" },
-        { id: "daily-loan-summary", href: "daily-loan-summary.html", label: "ปิดกะ" }
+        { id: "daily-loan-summary", href: "daily-loan-summary.html", label: "ปิดกะ" },
+        { id: "cash-flow-today", href: "cash-flow-today.html", label: "ยอดเข้า-ออก" },
+        { id: "contracts-today", href: "contracts-today.html", label: "สัญญาวันนี้" },
+        { id: "line-send-today", href: "line-send-today.html", label: "LINE ทวง" }
       ]
     },
     {
